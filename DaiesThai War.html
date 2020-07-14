@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+<style>
+ 	body{
+  		background-image: url('background-pic.jpg');
+  		background-attachment: fixed;
+  		background-size: cover;
+	}
+	#video{
+	  	position: absolute;
+  		bottom: 60px;
+  		right: 600px;
+  		width: 400px;
+	 	opacity: 0.85;
+	}
+	.main-menu {
+		color: red;
+  		font-family: 'Tangerine', serif;
+  		font-size: 40px
+	}
+	.user-space #Login {
+		position: absolute;
+  		left: 1200px;
+  		top: 30px;
+	}
+ 	#trailer {
+ 		background-color: orange;
+		position: absolute;
+  		left: 480px;
+  		top: -100px;
+  		font-family: 'Grenze Gotisch', cursive;
+		font-size: 100px;
+	}
+	.Description {
+		background-color: purple;
+		opacity: 0.8;
+		font-family: 'Bangers', cursive;
+		font-family: 'Grenze Gotisch', cursive;
+		font-size: 60px;
+		float: right;
+	}
+	.column {
+  		float: left;
+  		width: 31%;
+  		padding: 10px;
+	}
+	.onebyone {
+		margin-left:auto;
+        margin-right:auto;
+        height:auto; 
+        width:auto;
+	}
+
+	.buttons {
+		text-align: center;
+		float: middle;
+  		width: 70%;
+  		padding: 60px;
+  		background-color: #6F1E51;
+	}
+</style>
+</head>
+<body>
+<div><h1 id="trailer">The Trailer</h1></div>
+ 	<div class="header">
+ 		<div class="user-space">
+    	<a id="Login" href="Login.html"><b>Login / Register</b></a> 
+    	<ul class="main-menu">
+    		<li><h1><a href="DaiesThai War.html">Home</a></h1></li>
+			<li><h1><a href="Shop.html">Shop</a></h1></li>
+			<li><h1><a href="News.html">News</a></h1></li>
+			<li><h1><a href="Contact.html">Contact</a></h1></li>
+		</ul>
+ 	</div>
+
+<div id="video">
+	<video width="700" height="440" controls="controls">
+  		<source src="videoplayback.mp4" type="video/mp4">
+	</video>
+</div>
+<div class="onebyone">
+  	<div class="row">
+  		<div class="column">
+    			<img src="CHAOS PACK.png" alt="CHAOS" style="width:90%">
+   			<div class="buttons">
+   				<b>
+   					<p>
+   						CHAOS PACK PRICE: 3$
+    				</p>
+    			</b>
+    			<button>Purchase CHAOS PACK</button>
+    		</div> 
+  		</div>
+  		<div class="column">
+    		<img src="LEGENDARY PACK.png" alt="LEGENDARY" style="width:90%">
+    		<div class="buttons">
+    			<b>
+    				<p>
+    				LEGENDARY PACKPRICE: 6$
+    				</p>
+    			</b>
+    			<button>Purchase LEGENDARY PACK</button>
+    		</div> 
+  		</div>
+		<div class="column">
+    			<img src="EPIC PACK.png" alt="EPIC" style="width:90%">
+    		<div class="buttons"><b>
+    			<p>EPIC PACK PRICE: 9$
+    			</p>
+    			</b>
+    			<button>Purchase EPIC PACK</button>
+    		</div> 
+  		</div>
+	</div>
+	<div class="Description">
+		<h1>Description:</h1>
+		<p> DaiesThai War Is a PVP war game based on the Steem blockchain where you can buy, collect and trade Arks of power, weapons, and spells.
+		What is blockchain Gaming 
+		</p>
+    </div>
+</div>
+	<audio controls autoplay>
+		<source src="Thriller.mp3" type="audio/mpeg"><
+	</audio>
+</body>
+</html>

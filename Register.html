@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+	<style>
+    body{
+      background-image: url('background-pic.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+  .main-menu {
+  	color: red;
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
+    background-color: orange;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+  }
+
+  .user-space #Login {
+  	position: absolute;
+    left: 1200px;
+    top: 30px;
+  }
+
+   #userspace {
+   	  background-color: orange;
+      position: absolute;
+      left: 450px;
+      top: -100px;
+      font-family: 'Grenze Gotisch', cursive;
+      font-size: 100px;
+    }
+
+    #user {
+  	  position: absolute;
+      top: 250PX;
+      right: 550px;
+    }
+
+    .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between; 
+    }
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+  <div>
+    <h1 id="userspace">User Space</h1>
+  </div>
+
+      <div class="header">
+  <div class="user-space">
+      <a id="Login" href="Login.html"><b>Login / Register</b></a> 
+      <ul class="main-menu">
+        <li>
+            <h1><a href="DaiesThai War.html">Home</a></h1>
+        </li>
+        <li>
+            <h1><a href="Shop.html">Shop</a></h1>
+        </li>
+        <li>
+            <h1><a href="News.html">News</a></h1>
+        </li>
+        <li>
+            <h1><a href="Contact.html">Contact</a></h1>
+        </li>
+      </ul>
+  </div>
+    <div id="user">
+     <div class="inputs">
+        <label for="pseudo"><b>Pseudo</b></label>
+            <input type="text" placeholder="Enter Pseudo" name="Pseudo" id="pseudo" required>
+     </div>
+    <div class="inputs">
+        <label for="FirstName"><b>FirstName</b></label>
+            <input type="text" placeholder="Enter FirstName" name="FirstName" id="FirstName" required>
+    </div>
+    <div class="inputs">
+        <label for="LastName"><b>LastName</b></label>
+            <input type="text" placeholder="Enter LastName" name="LastName" id="LastName" required>
+    </div>
+    <div class="inputs">
+        <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+    </div>
+         <button style="background-color: red; width:100%" onclick="register()">Register</button>
+    </div>
+        <script type="text/javascript" src="project.js"></script>
+</body>
+</html>
